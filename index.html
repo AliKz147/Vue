@@ -10,8 +10,67 @@
 </head>
 
 <body>
-    <div id='vue-app'>
-        <h1>{{name}}</h1>
+    <div id='vue-app-one'>
+        <h1> {{ title }}</h1>
+        <p> {{ greet }}</p>
+        <!-- <div>
+            <button @click="error = !error"> Toggle Error</button>
+            <button @click="success = !success"> Toggle Success</button>
+            <p v-if='error'>Error</p>
+            <p v-else-if='success'>Success</p>
+            <p v-show='error'>show error</p>
+            <p v-show='success'>show success</p>
+        </div>
+        <div>
+            <ul>
+                <li v-for='(guy,index) in guys'>{{index}} - {{ guy }}</li>
+            </ul>
+            <ul>
+                <li v-for='(char,index) in characters'>{{index}} - {{ char.name }}, Age: {{char.age}}</li>
+            </ul>
+            <template v-for='char in characters'>
+                <p v-for='(val,key) in char'>{{key}} : {{val}}</p>
+            </template>
+        </div>
+        <div @click="available = !available" :class='{available: available}'>
+            <span>Ali</span>
+            <button @click="a++">Add to A</button>
+            <button @click="b++">Add to B</button>
+            <p>A: {{a}}</p>
+            <p>B: {{b}}</p>
+            <p>Age + A = {{addToA}}</p>
+            <p>Age + B = {{addToB}}</p>
+        </div>
+        <div :class='compClasses'>
+            <button @click='nearby = !nearby'>Toggle Nearby</button>
+            <button @click="available = !available">Toggle available</button>
+            <span>Ali2</span>
+        </div>
+        <p>{{greet('morning')}}</p>
+        <a :href="website">Google</a>
+        <input type="text" :value="name">
+        <p v-html="websiteTag"></p>
+        <p>{{age}}</p>
+        <button @click.once="add(1)">Add</button>
+        <button @click="subtract(1)">Minus</button>
+        <button @dblclick="add(10)">Add 10</button>
+        <button @dblclick="subtract(10)">Minus 10</button>
+        <br>
+        <br>
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{x}},{{y}}
+        </div>
+        <label>Name:</label>
+        <input type="text" v-model="name" />
+        <span>{{name}}</span>
+        <label>Age:</label>
+        <input type="text" v-model="age" />
+        <span>{{age}}</span> -->
+    </div>
+    <div id="vue-app-two">
+        <h1> {{ title }}</h1>
+        <p> {{ greet }}</p>
+        <button @click=' changeTitle '>Change App Title</button>
     </div>
 </body>
 
